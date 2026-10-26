@@ -1,0 +1,136 @@
+@import 'tailwindcss';
+
+/* Dark mode follows `data-theme` on <html>; see useTheme. */
+@custom-variant dark (&:where([data-theme='dark'], [data-theme='dark'] *));
+
+/*
+ * Design tokens, in the playful style of aliabdaal.com. Area colours come straight from the original spreadsheet's pie chart;
+ * semantic colours (bg, fg, …) are redefined for dark mode below.
+ */
+@theme {
+  --font-sans:
+    'Inter Variable', 'IBM Plex Sans Arabic', ui-sans-serif, system-ui, -apple-system, 'Segoe UI',
+    sans-serif;
+
+  --font-display:
+    'Fraunces Variable', 'IBM Plex Sans Arabic', ui-serif, Georgia, 'Times New Roman', serif;
+
+  /* Bright brand colours, the same in light and dark mode. Text on them is always ink. */
+  --color-ink: #1d1b2c;
+  --color-sun: #ffd166;
+  --color-sky: #5dcdf1;
+  --color-coral: #f9706b;
+  --color-mint: #7fd48c;
+  --color-tangerine: #ff9d6c;
+  --color-lilac: #b9a6f2;
+
+  --color-area-sleep: #a4c2f4;
+  --color-area-work: #cccccc;
+  --color-area-food: #ea9999;
+  --color-area-chores: #b6d7a8;
+  --color-area-childcare: #ffe599;
+  --color-area-fitness: #f9cb9c;
+  --color-area-entertainment: #b4a7d6;
+  --color-area-relationships: #d5a6bd;
+  --color-area-free: #7fd1c4;
+
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-cream: var(--cream);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-fg: var(--accent-fg);
+  --color-accent-strong: var(--accent-strong);
+  --color-cell: var(--cell);
+  --color-cell-border: var(--cell-border);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+  --color-positive: var(--positive);
+}
+
+/* Light: warm cream page, white cards, navy ink. Playful brand colours for decoration. */
+:root {
+  --bg: #fbf7f2;
+  --surface: #ffffff;
+  --cream: #f6efe7;
+  --fg: #1d1b2c;
+  --muted: #55526a;
+  --border: #ece3d8;
+  /* Tangerine call-to-action, with dark text for AA contrast. */
+  --accent: #ff9d6c;
+  --accent-fg: #2b1206;
+  --accent-strong: #b5461a;
+  /* Input cells stay the spreadsheet's soft blue. */
+  --cell: #eef9fd;
+  --cell-border: #9edcf0;
+  --danger: #b42318;
+  --danger-soft: #fdecea;
+  --positive: #157347;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --bg: #15141f;
+    --surface: #1f1e2c;
+    --cream: #272536;
+    --fg: #f4efe9;
+    --muted: #b3aec2;
+    --border: #34314a;
+    --accent: #ff9d6c;
+    --accent-fg: #2b1206;
+    --accent-strong: #ffb894;
+    --cell: #10303b;
+    --cell-border: #2c6577;
+    --danger: #ff8a7a;
+    --danger-soft: #3a1d1a;
+    --positive: #6fd39a;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme='dark'] {
+  --bg: #15141f;
+  --surface: #1f1e2c;
+  --cream: #272536;
+  --fg: #f4efe9;
+  --muted: #b3aec2;
+  --border: #34314a;
+  --accent: #ff9d6c;
+  --accent-fg: #2b1206;
+  --accent-strong: #ffb894;
+  --cell: #10303b;
+  --cell-border: #2c6577;
+  --danger: #ff8a7a;
+  --danger-soft: #3a1d1a;
+  --positive: #6fd39a;
+  color-scheme: dark;
+}
+
+@layer base {
+  body {
+    @apply bg-bg font-sans text-fg antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    font-variation-settings: 'SOFT' 50;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-accent-strong;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

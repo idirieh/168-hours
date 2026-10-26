@@ -1,0 +1,366 @@
+{
+  "app": {
+    "name": "168 Hours",
+    "skipToContent": "Skip to main content",
+    "tagline": "A free weekly time calculator"
+  },
+  "nav": {
+    "label": "Main",
+    "current": "Current Week",
+    "ideal": "Ideal Week",
+    "compare": "Compare"
+  },
+  "settings": {
+    "switchTo": "العربية",
+    "switchToLabel": "Switch to Arabic",
+    "theme": "Theme",
+    "themes": {
+      "system": "System",
+      "light": "Light",
+      "dark": "Dark"
+    }
+  },
+  "landing": {
+    "title": "Where do your <u>168 hours</u> go?",
+    "intro": "Every week has exactly 168 hours, the same for everyone. Fill in a few simple sentences about sleep, work, food and the rest of your life, and see how much free time is really left.",
+    "intro2": "Then picture your ideal week and compare the two, to find the hours you'd like to win back.",
+    "credit": "Inspired by <a>Laura Vanderkam's book <i>168 Hours</i></a> and by <ali>Ali Abdaal</ali>, who both show that we have more time than we think.",
+    "start": "Start with my current week",
+    "areasTitle": "Eight areas of your <u>life</u>",
+    "areasText": "Every hour lands somewhere. Whatever is left over is your free time.",
+    "steps": {
+      "title": "How it <c>works</c>",
+      "current": {
+        "title": "Your current week",
+        "text": "Answer sentence-style questions about how you spend your time right now."
+      },
+      "ideal": {
+        "title": "Your ideal week",
+        "text": "Fill in the same questions for the week you'd love to have."
+      },
+      "compare": {
+        "title": "Compare",
+        "text": "See which areas gain or lose time, area by area."
+      },
+      "go": "Get started"
+    },
+    "privacy": "🔒 Private by design: no accounts, no tracking. Your answers are saved only in this browser."
+  },
+  "week": {
+    "current": {
+      "heading": "👉 Current Week",
+      "question": "How do you spend your 168 hours of the week at the moment?"
+    },
+    "ideal": {
+      "heading": "🌈 Ideal Week",
+      "question": "How would you ideally spend your 168 hours of the week?",
+      "copy": "Copy from Current Week",
+      "copyConfirm": "This replaces your ideal week with a copy of your current week.",
+      "copyYes": "Yes, copy it",
+      "copied": "Copied your current week. Now adjust it to your ideal."
+    }
+  },
+  "common": {
+    "cancel": "Cancel"
+  },
+  "areas": {
+    "sleep": "Sleep",
+    "work": "Work",
+    "food": "Food",
+    "chores": "Chores",
+    "childcare": "Childcare",
+    "fitness": "Fitness",
+    "entertainment": "Entertainment",
+    "relationships": "Relationships",
+    "free": "Free Time",
+    "used": "Total Non-Free Time"
+  },
+  "form": {
+    "remaining": "That leaves me with <b>{{value}}</b> hours per week for everything else.",
+    "remainingFree": "That leaves me with <b>{{value}}</b> hours per week of free time.",
+    "remainingOver": "That's <b>{{value}}</b> hours more than a week has.",
+    "invalid": "Please enter a number, like 7 or 7.5.",
+    "clamped": "The most you can enter here is {{max}}.",
+    "skip": "Not applicable to me",
+    "skipped": "Skipped: childcare isn't counted in this week."
+  },
+  "sections": {
+    "sleep": {
+      "total": "In total, I spend <b>{{value}}</b> hours per week on sleep-related things.",
+      "rows": {
+        "hoursPerNight": {
+          "before": "I sleep for around",
+          "before_ideal": "I'd like to sleep for around",
+          "after": "hours per night."
+        },
+        "windDownMinutes": {
+          "before": "I wind down for",
+          "before_ideal": "I'd like to wind down for",
+          "after": "minutes before sleeping."
+        }
+      },
+      "results": {
+        "sleep": "This means I spend <b>{{value}}</b> hours per week sleeping.",
+        "windDown": "This means I spend <b>{{value}}</b> hours per week preparing to sleep."
+      }
+    },
+    "work": {
+      "total": "In total, I spend <b>{{value}}</b> hours per week working.",
+      "rows": {
+        "hoursPerDay": {
+          "before": "I work for around",
+          "after": "hours per day (excluding lunch break)."
+        },
+        "daysPerWeek": {
+          "before": "I work",
+          "after": "days per week."
+        },
+        "lunchBreakMinutes": {
+          "before": "My lunch break is",
+          "after": "minutes per working day."
+        },
+        "commuteMinutesEachWay": {
+          "before": "My commute is",
+          "after": "minutes each way."
+        },
+        "getReadyMinutes": {
+          "before": "I spend",
+          "after": "minutes per day getting ready for work."
+        },
+        "changeAfterWorkMinutes": {
+          "before": "I spend",
+          "after": "minutes per day getting changed after work."
+        }
+      },
+      "results": {
+        "official": "This means I spend <b>{{value}}</b> hours per week officially working.",
+        "lunch": "This means I spend <b>{{value}}</b> hours per week on my lunch break.",
+        "commute": "This means I spend <b>{{value}}</b> hours per week commuting.",
+        "getReady": "This means I spend <b>{{value}}</b> hours per week getting ready for work.",
+        "changeAfter": "This means I spend <b>{{value}}</b> hours per week getting changed after work."
+      }
+    },
+    "food": {
+      "total": "In total, I spend <b>{{value}}</b> hours per week on cooking and eating food.",
+      "rows": {
+        "breakfastEatMinutes": {
+          "before": "Each day, I spend around",
+          "after": "minutes eating breakfast."
+        },
+        "breakfastPrepMinutes": {
+          "before": "And another",
+          "after": "minutes preparing, cooking or ordering it."
+        },
+        "lunchEatMinutes": {
+          "before": "Each non-work day, I spend",
+          "after": "minutes eating lunch."
+        },
+        "lunchPrepMinutes": {
+          "before": "And another",
+          "after": "minutes preparing, cooking or ordering it."
+        },
+        "dinnerEatMinutes": {
+          "before": "Each day, I spend around",
+          "after": "minutes eating dinner."
+        },
+        "dinnerPrepMinutes": {
+          "before": "And another",
+          "after": "minutes preparing, cooking or ordering it."
+        }
+      },
+      "results": {
+        "breakfastMinutesPerDay": "This means I spend <b>{{value}}</b> minutes per day on breakfast.",
+        "breakfast": "Which means I spend <b>{{value}}</b> hours per week on breakfast.",
+        "lunchMinutesPerDay": "This means I spend <b>{{value}}</b> minutes per day on lunch (excluding work days).",
+        "lunch": "Which means I spend <b>{{value}}</b> hours per week on lunch (excluding work days).",
+        "dinnerMinutesPerDay": "This means I spend <b>{{value}}</b> minutes per day on dinner.",
+        "dinner": "Which means I spend <b>{{value}}</b> hours per week on dinner."
+      }
+    },
+    "chores": {
+      "total": "In total, that's <b>{{value}}</b> hours per week on chores.",
+      "rows": {
+        "groceryTripsPerWeek": {
+          "before": "I do the groceries",
+          "after": "times per week."
+        },
+        "minutesPerGroceryTrip": {
+          "before": "Each grocery session takes",
+          "after": "minutes (including travel, loading, unloading etc.)."
+        },
+        "cleaningsPerWeek": {
+          "before": "I clean the house approx.",
+          "after": "times per week."
+        },
+        "minutesPerCleaning": {
+          "before": "Each cleaning session takes",
+          "after": "minutes."
+        },
+        "laundryLoadsPerWeek": {
+          "before": "I do laundry",
+          "after": "times per week."
+        },
+        "minutesPerLaundry": {
+          "before": "Each laundry session takes me",
+          "after": "minutes."
+        },
+        "miscHoursPerWeek": {
+          "before": "I do other misc. chores",
+          "after": "hour(s) per week."
+        }
+      },
+      "results": {
+        "groceries": "This means I spend <b>{{value}}</b> hours per week on groceries.",
+        "cleaning": "This means I spend <b>{{value}}</b> hours per week on cleaning.",
+        "laundry": "This means I spend <b>{{value}}</b> hours per week on laundry."
+      }
+    },
+    "childcare": {
+      "total": "In total, that's <b>{{value}}</b> hours per week on childcare.",
+      "rows": {
+        "hoursPerWeekday": {
+          "before": "Each weekday, I spend",
+          "after": "hours actively taking care of my child(ren)."
+        },
+        "hoursPerWeekendDay": {
+          "before": "Each weekend day, I spend",
+          "after": "hours actively taking care of my child(ren)."
+        },
+        "adminHoursPerWeek": {
+          "before": "Each week, I spend",
+          "after": "hours on child admin, logistics etc."
+        },
+        "otherHoursPerWeek": {
+          "before": "Each week, I spend",
+          "after": "hours on other child-related things."
+        }
+      },
+      "results": {
+        "weekdays": "This means I spend <b>{{value}}</b> hours on weekdays on childcare.",
+        "weekends": "This means I spend <b>{{value}}</b> hours on weekends on childcare."
+      }
+    },
+    "fitness": {
+      "total": "In total, that's <b>{{value}}</b> hours per week on fitness-related things.",
+      "rows": {
+        "exerciseHoursPerWeek": {
+          "before": "Each week, I spend",
+          "after": "hours exercising (including commute time)."
+        },
+        "otherHoursPerWeek": {
+          "before": "Each week, I spend",
+          "after": "hours on other fitness-related things."
+        }
+      }
+    },
+    "entertainment": {
+      "total": "In total, that's <b>{{value}}</b> hours per week on entertainment.",
+      "rows": {
+        "tvMoviesHours": {
+          "before": "Each week, I spend",
+          "after": "hours watching TV shows and movies."
+        },
+        "socialMediaHours": {
+          "before": "Each week, I spend",
+          "after": "hours on social media apps."
+        },
+        "readingHours": {
+          "before": "Each week, I spend",
+          "after": "hours reading."
+        },
+        "gamingHours": {
+          "before": "Each week, I spend",
+          "after": "hours gaming."
+        },
+        "otherHours": {
+          "before": "Each week, I spend",
+          "after": "hours on other entertainment."
+        }
+      }
+    },
+    "relationships": {
+      "total": "In total, that's <b>{{value}}</b> hours per week on relationships.",
+      "rows": {
+        "familyPartnerHours": {
+          "before": "Each week, I spend",
+          "after": "hours on quality family or partner time."
+        },
+        "otherSocialisingHours": {
+          "before": "Each week, I spend",
+          "after": "hours on other socialising."
+        }
+      }
+    }
+  },
+  "summary": {
+    "title": "Summary",
+    "hoursUsed": "Hours used",
+    "hoursFree": "Hours free",
+    "weekly": "Weekly",
+    "monthly": "Monthly",
+    "annually": "Annually",
+    "totalsCaption": "Hours used and free, per week, month (4 weeks) and year (52 weeks)",
+    "lifeArea": "Life area",
+    "hours": "Hours",
+    "percent": "%",
+    "percentLabel": "Percent of the week",
+    "vsCurrent": "vs Current",
+    "vsCurrentLabel": "Compared with your current week",
+    "areaCaption": "Hours per week in each life area",
+    "pieTitle": "What does my time split look like by %?",
+    "barTitle": "What does my time split look like overall?",
+    "freeCenter": "hours free",
+    "overTitle": "You've allocated more than 168 hours. Something doesn't add up.",
+    "overDetail": "You're <b>{{value}}</b> hours over, so free time shows as 0 until the week fits.",
+    "jump": "See summary",
+    "downloadPng": "Download as PNG",
+    "preparing": "Preparing image…",
+    "pngFailed": "Sorry, the image couldn't be created. Please try again."
+  },
+  "compare": {
+    "heading": "⚖️ Compare",
+    "question": "How does your ideal week differ from your current one?",
+    "current": "Current",
+    "ideal": "Ideal",
+    "difference": "Difference",
+    "caption": "Hours per week: current, ideal and the difference (ideal minus current)",
+    "chartTitle": "Where would your time move?",
+    "chartHint": "Bars to the right mean more time in your ideal week; to the left, less.",
+    "empty": "Fill in your <current>current week</current> and your <ideal>ideal week</ideal> to compare them.",
+    "insight": {
+      "both": "In your ideal week you'd gain <b>{{gain}}</b> hours of {{gainArea}} and lose <b>{{loss}}</b> hours of {{lossArea}}.",
+      "gainOnly": "In your ideal week you'd gain <b>{{gain}}</b> hours of {{gainArea}}.",
+      "lossOnly": "In your ideal week you'd spend <b>{{loss}}</b> fewer hours on {{lossArea}}.",
+      "same": "Your ideal week looks just like your current one."
+    },
+    "areaNames": {
+      "sleep": "sleep",
+      "work": "work",
+      "food": "food",
+      "chores": "chores",
+      "childcare": "childcare",
+      "fitness": "fitness",
+      "entertainment": "entertainment",
+      "relationships": "relationships"
+    },
+    "more": "{{value}} hours more",
+    "less": "{{value}} hours less",
+    "noChange": "no change"
+  },
+  "data": {
+    "title": "Your data",
+    "intro": "Saved automatically in this browser only. Export a file to keep a backup or move to another device.",
+    "export": "Export JSON",
+    "import": "Import JSON",
+    "reset": "Reset everything",
+    "resetConfirm": "This clears both weeks from this browser. It can't be undone.",
+    "resetYes": "Yes, reset everything",
+    "imported": "Imported your data.",
+    "importFailed": "That file isn't a 168 Hours export, so nothing was changed.",
+    "resetDone": "Everything has been reset."
+  },
+  "footer": {
+    "privacy": "No tracking, no accounts, no cookies. Your answers never leave your browser.",
+    "credit": "Inspired by <a>168 Hours</a> by Laura Vanderkam and by <ali>Ali Abdaal</ali>. Open source under the MIT license."
+  }
+}
